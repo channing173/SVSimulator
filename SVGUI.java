@@ -1,16 +1,10 @@
 
 import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Image;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
-import javax.print.attribute.standard.Media;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -82,12 +76,9 @@ public class SVGUI
 
         try
         {
-          // Open an audio input stream.
           File soundFile = new File("Suicidal_Vibes_Updated.wav");
           AudioInputStream audioIn = AudioSystem.getAudioInputStream(soundFile);
-          // Get a sound clip resource.
           Clip clip = AudioSystem.getClip();
-          // Open audio clip and load samples from the audio input stream.
           clip.open(audioIn);
           clip.start();
           
