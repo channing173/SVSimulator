@@ -39,7 +39,7 @@ public class SVGUI
     AListener l = new AListener();
 
     panel = new JPanel();
-    button = new JButton("Suicidal Vibes");
+    button = new JButton("Hello, I am sad");
     button.addActionListener(l);
 
     
